@@ -1,0 +1,210 @@
+
+    /* Style pour la page de détails du chantier - Version harmonisée */
+    .chantier-details-container {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .chantier-details-container h2 {
+        color: #2c3e50;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #3498db;
+    }
+
+    /* Lien de retour */
+    .back-btn {
+        display: inline-flex;
+        align-items: center;
+        color: #2c3e50;
+        text-decoration: none;
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+        transition: all 0.2s;
+    }
+
+    .back-btn:hover {
+        color: #3498db;
+        text-decoration: underline;
+    }
+
+    /* Container des informations principales */
+    .chantier-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Cadres d'information */
+    .info-section {
+        flex: 1;
+        min-width: 300px;
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        border-top: 4px solid #3498db;
+    }
+
+    .info-section h3 {
+        color: #2c3e50;
+        font-size: 1.2rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .info-section p {
+        margin: 0.8rem 0;
+        color: #333;
+        line-height: 1.5;
+    }
+
+    .info-section strong {
+        color: #2c3e50;
+        font-weight: 600;
+    }
+
+    /* Section client - Style spécifique */
+    .info-section:nth-child(2) {
+        border-top-color: #2ecc71;
+    }
+
+    .info-section:nth-child(2) h3 {
+        color: #2ecc71;
+    }
+
+    /* Section matériels */
+    .materiel-section {
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        margin-bottom: 2rem;
+        border-top: 4px solid #e74c3c;
+    }
+
+    .materiel-section h3 {
+        color: #2c3e50;
+        font-size: 1.2rem;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    /* Bouton ajouter matériel */
+    .add-btn {
+        display: inline-block;
+        background-color: #3498db;
+        color: white;
+        padding: 0.7rem 1.2rem;
+        border-radius: 6px;
+        text-decoration: none;
+        margin-bottom: 1.5rem;
+        transition: all 0.2s ease;
+        border: none;
+        cursor: pointer;
+        font-size: 0.9rem;
+    }
+
+    .add-btn:hover {
+        background-color: #2980b9;
+        transform: translateY(-2px);
+    }
+
+    /* Message aucun matériel */
+    .no-data {
+        padding: 1rem;
+        background: #f8f9fa;
+        border-radius: 5px;
+        text-align: center;
+        color: #6c757d;
+    }
+
+    /* Tableau des matériels */
+    .table-responsive {
+        overflow-x: auto;
+        margin: 1.5rem 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+    }
+
+    .materiel-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.95rem;
+    }
+
+    .materiel-table th {
+        background-color: #2c3e50;
+        color: white;
+        padding: 1rem;
+        text-align: left;
+        font-weight: 500;
+    }
+
+    .materiel-table td {
+        padding: 1rem;
+        border-bottom: 1px solid #f0f0f0;
+        color: #333;
+    }
+
+    .materiel-table tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    .materiel-table tr:hover {
+        background-color: #f1f5f9;
+    }
+
+    /* Boutons d'action */
+    .btn {
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        display: inline-block;
+        margin-right: 0.5rem;
+    }
+
+    .edit-btn {
+        background-color: #3498db;
+        color: white;
+    }
+
+    .edit-btn:hover {
+        background-color: #2980b9;
+    }
+
+    .delete-btn {
+        background-color: #f44336;
+        color: white;
+    }
+
+    .delete-btn:hover {
+        background-color: #d32f2f;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .chantier-info {
+            flex-direction: column;
+        }
+        
+        .info-section {
+            min-width: 100%;
+        }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+    }
