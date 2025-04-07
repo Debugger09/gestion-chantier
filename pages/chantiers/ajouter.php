@@ -1,7 +1,6 @@
 <?php
 require_once '../../includes/config.php';
 require_once '../../includes/auth.php';
-requireAdmin();
 
 // Récupération des clients et chefs de projet
 $clients = $db->query("SELECT id, nom FROM clients ORDER BY nom")->fetchAll();
